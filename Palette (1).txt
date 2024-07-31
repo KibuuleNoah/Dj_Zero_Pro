@@ -1,0 +1,5 @@
+/* CSV */
+3b2d23,e5ccaf,a87f3d,ab8b66,7e4b30,95887e,b69f87,3ba5e4,f8eadd,929c9b
+
+/* Array */
+["3b2d23","e5ccaf","a87f3d","ab8b66","7e4b30","95887e","b69f87","3ba5e4","f8eadd","929c9b"]

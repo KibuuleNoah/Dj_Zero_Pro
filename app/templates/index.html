@@ -1,0 +1,104 @@
+{% extends "base.html" %} {% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>DJ ZERO PRO UG</h1>
+      <h4>The Wheels King</h4>
+      <h6>Swags Djs</h6>
+      <p class="lead">Experience the Beats, Feel the Vibes</p>
+      <!-- <a href="#latest-mixes" class="btn btn-primary btn-lg">Listen to Latest Mixes</a> -->
+      <center>
+        <div id="call-zero">
+          <a href="tel:+256752983087">
+            <i class="bi bi-telephone"></i>
+          </a>
+        </div>
+        <span><b>Book Me Now</b><span>
+      </center>
+    </div>
+  </section>
+<!-- Introduction Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p class="lead">I'm DJ Zero Pro, a passionate music lover and professional DJ with over X years of experience in making crowds dance. From clubs to festivals, my beats have electrified audiences around the world.</p>
+      <a href="" class="btn btn-outline-secondary">More About Zero</a>
+    </div>
+  </section>
+
+  <!-- Latest Mixes Section -->
+  <section id="latest-mixes" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Latest Mixes</h2>
+      <div class="row">
+        {% for _ in range(6) %}
+        <div class="col-md-4 my-1">
+          <div class="card">
+            <img src="{{url_for('static',filename='imgs/zero-banner.jpg')}}" class="card-img-top" alt="Mix 1">
+            <div class="card-body">
+              <h6 class="card-title">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint</h6>
+              <div class="row gap-1">
+                <div class="col">
+                  <button class="btn btn-outline-secondary">
+                    <i class="bi bi-download"></i></button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-outline-secondary">
+                    <i class="bi bi-play-circle"></i>  </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-outline-secondary">
+                    <i class="bi bi-play-btn"></i>
+                  </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-outline-secondary">
+                    <i class="bi bi-share"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>Quick Links</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <a class="nav-link active" aria-current="page" href="#">
+            Home
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="nav-link" href="#">
+            About
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="nav-link" href="#">
+            Contact
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="nav-link" href="#">
+            Music
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="nav-link" href="#">
+            Gallery
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
